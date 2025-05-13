@@ -6,7 +6,7 @@
 		<title>Teacher View</title>
 		<link
 			rel="stylesheet"
-			href="{{ url_for('static', filename='Style.css') }}"
+			href="{{ url_for(filename='Style.css') }}"
 		/>
 	</head>
 	<body>
@@ -46,6 +46,6 @@
 			<p>No classes created yet.</p>
 			{% endfor %}
 		</ul>
-		<script src="{{ url_for('static', filename='script.js') }}"></script>
+		<script src="{{ url_for(filename='script.js') }}"></script>
 	</body>
 </html>
